@@ -2,11 +2,10 @@
 First Personal Design Portfolio
 
 
-##Landing basic page with no pages.
+## Landing basic page with no pages.
+Created following a Youtube tutorial, with added personal changes in design and content.
 
-Created step by step following a Youtube tutorial.
-
-## Language
+## Languages
 
 - HMTL5;
 - CSS3;
