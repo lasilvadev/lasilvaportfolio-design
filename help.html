@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HELP ESTUDANTIL Project Page</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+     <!-- ==== HEADER ==== -->
+     <header>
+        <div class="nav-bar">
+            <a href="../index.html" class="logo"><b>LARISSA</b> SILVA</a>
+            <div class="navigation">
+                <div class="nav-items">
+                    <div class="nav-close-btn"></div>
+                    <a href="../index.html">Home</a>
+                    <a class="active" href="../index.html#portfolio">Portfolio</a>
+                    <a href="../index.html#about">About</a>
+                    <a href="../index.html#skills">Skills</a>                 
+                    <a href="../index.html#contact">Contact</a>
+                </div>
+            </div>
+            <div class="nav-menu-btn"></div>
+        </div>
+    </header>
+
+    <!-- SCROLL TO TOP BUTTON -->
+    <div class="scrollToTop-btn flex-center active">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- PROJECT -->
+    <section class="project section">
+        <div class="container flex-center">
+            <h1 class="section-title-01">Help</h1>
+            <h2 class="section-title-02">Help</h2>
+            <div class="content">
+                <div class="project-description">
+                    <p>Complete branding, content and web design for an academic consulting agency created for future university students in Argentina.</p>
+                </div>
+                <div class="first-img">
+                    <img src="/images/help1.png" alt="">
+
+                    <div class="project-popup-image">
+                        <span>&times;</span>
+                        <img src="./images/help1.png alt=">
+                    </div>
+
+                </div>
+                <div class="image-gallery-1">
+                    <img src="/images/help2.png" alt="">
+                    <img src="/images/help3.png" alt="">
+                </div>
+                <h3 class="project-title">Social Media Content</h3>
+                <div class="image-gallery-2">
+                    <img src="/images/help4.png" alt="">
+                    <img src="/images/help5.png" alt="">
+                    <img src="/images/help6.png" alt="">
+                </div>
+                <div class="image-gallery-2">
+                    <img src="/images/help7.png" alt="">
+                    <img src="/images/help8.png" alt="">
+                    <img src="/images/help9.png" alt="">
+                </div>
+                <h3 class="project-title">Final WebSite</h3>
+                <iframe src="https://help-test.netlify.app/" frameborder="0" width="1000" height="500"></iframe>
+                <div class="image-gallery-1">
+                    <img src="/images/help-prot-1.png" alt="">
+                    <img src="/images/help-prot-2.png" alt="">
+                </div>
+                <h3 class="project-title">First Mobile Site Prototype</h3>
+                <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="500" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fw7tujphdVlD2WNV9EAUMsk%2FHELP-Assessoria%3Fnode-id%3D1%253A66%26scaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D1%253A66" allowfullscreen></iframe>
+
+                <div class="next-button">
+                    <a href="/arthur.html" class="secondary-btn">NEXT <i class="fas fa-arrow-right"></i></a> 
+                </div>
+
+            </div>
+            
+        </div>
+    </section>    
+
+    <!-- ==== FOOTER ==== -->
+    <footer>
+        <div class="footer-container">
+            <div class="about group">
+                <h2>LARISSA</h2>
+                <p>Visual/Web Designer & Illustrator</p>
+                <a href="#about"> About Me</a>
+            </div>
+            <div class="hr"></div>
+            <div class="info group">
+                <h3>More</h3>
+                <ul>
+                    <li><a href="#portfolio"></a>Portfolio</li>
+                    <li><a href="#skills"></a>Skills</li>
+                    <li><a href="#contact"></a>Contact</li>
+                </ul>
+            </div>
+            <div class="hr"></div>
+            <div class="follow group">
+                <h3>Follow</h3>
+                <ul>
+                    <li><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-behance"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-deviantart"></i></a></li>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="footer-copyright group">
+            <p>&copy; 2022 by Larissa Silva. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+</body>        
+
+    <!-- External Scripts -->
+    <!-- Javascript -->
+    <script src="./js/main.js"></script>
+    <!-- ImagePopUp -->
+    <script>
+        document.querySelectorAll(".project img").forEach(image => {
+            image.onclick = () => {
+                document.querySelector(".project-popup-image").style.display = "block";
+                document.querySelector(".project-popup-image img").src = image.getAttribute("src")
+            }
+        })
+
+        document.querySelector(".project-popup-image span").onclick = () => {
+            document.querySelector(".project-popup-image").style.display = "none";
+        }
+    </script>
+</body>
+</html>
