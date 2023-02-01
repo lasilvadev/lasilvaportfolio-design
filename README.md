@@ -8,9 +8,9 @@ Created step by step following a Youtube tutorial.
 
 ## Language
 
-HMTL5;
-CSS3;
-JavaScript;
+- HMTL5;
+- CSS3;
+- JavaScript;
 
 ## Editor
 
